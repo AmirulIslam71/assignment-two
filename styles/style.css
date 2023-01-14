@@ -1,0 +1,115 @@
+/* font awesome styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Work+Sans:wght@700&display=swap');
+
+* {
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    padding: 0 240px;
+
+}
+
+/* header and navbar styles */
+
+.architect-container {
+    background: rgba(255, 144, 14, 0.1);
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.nav-title {
+    font-size: 30px;
+    color: #131313;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+}
+
+/* brand container styles */
+
+.brand-container {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.brand h3 {
+    color: #131313;
+    font-size: 64px;
+}
+
+.brand p {
+    color: #727272;
+    font-size: 16px;
+}
+
+input[type=button] {
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+/* banner image styles */
+
+.banner img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* main quick list style */
+.quick-container {
+    display: flex;
+    margin-top: 80px;
+}
+
+.quick-imag {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.quick-imag img{
+    width: 200px;
+    height: 200px;
+}
+
+.quick-article {
+    margin-left: 70px;
+    margin-top: 100px;
+}
+article h4{
+    color: #727272;
+    font-size: 45px;
+}
+article p{
+    font-size: 16px;
+    color: #727272;
+}
+.bold{
+    color: #131313;
+}
+.bold2{
+    color: #FF900E;
+}
