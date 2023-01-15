@@ -300,8 +300,6 @@ hr {
 
 /* Responsive for mobile device */
 
-
-
 @media screen and (max-width: 576px) {
 
     /* header and nav bar styles */
@@ -366,8 +364,6 @@ hr {
 }
 
 /* Responsive for ipad tablet device */
-
-
 
 @media screen and (min-width: 577px) and (max-width:922px) {
 
