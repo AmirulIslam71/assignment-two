@@ -50,7 +50,11 @@ nav ul li a {
 
 .brand-container {
     margin-top: 100px;
-    padding: 20px;
+}
+
+.brand {
+    margin: auto;
+    width: 70%;
     text-align: center;
 }
 
@@ -95,55 +99,68 @@ input[type=button] {
     margin-left: 70px;
     margin-top: 100px;
 }
-article h4{
+
+article h4 {
     color: #727272;
     font-size: 45px;
 }
-article p{
+
+article p {
     font-size: 16px;
     color: #727272;
 }
-.bold{
+
+.bold {
     color: #131313;
 }
-.bold2{
+
+.bold2 {
     color: #FF900E;
 }
+
+
 /* features styles */
 
-.features-container{
+.features-container {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
-.features{
+.features {
     margin-top: 50px;
 }
-.vertical-line{
+
+.vertical-line {
     border-left: 5px solid #FF900E;
 }
-.vertical-line h4{
+
+.vertical-line h4 {
     font-size: 45px;
     margin-left: 30px;
 }
-.features p{
+
+.features p {
     color: #727272;
     font-size: 16px;
 }
-.features-block{
+
+.features-block {
     margin-left: 15px;
 }
-.block h5{
+
+.block h5 {
     color: #131313;
     font-size: 20px;
 }
-.features-image img{
+
+.features-image img {
     width: 100%;
     height: 100%;
 }
-.features-image input[type=button]{
+
+.features-image input[type=button] {
     margin: -50px -38px;
     padding: 25px;
     font-size: 25px;
@@ -151,79 +168,155 @@ article p{
 
 /* some facts styles */
 
-.some-fact h2{
+.some-fact h2 {
     margin-top: 130px;
     color: #131313;
     font-size: 45px;
 }
-.some-fact p{
+
+.some-fact p {
     color: #727272;
     font-size: 16px;
     width: 60%;
 }
+
 /* awarded styles */
 
-.awarded{
+.awarded {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
-.award-container{
+.award-container {
     border: 2px solid rgb(204, 204, 60);
     border-radius: 10px;
 }
- 
-.award-control{
+
+.award-control {
     text-align: center;
     padding: 10px 20px;
 
 }
-.award-control p{
+
+.award-control p {
     color: #424242;
     font-size: 20px;
 }
-.award-title{
+
+.award-title {
     color: #727272;
 }
+
+
 /* sponser styles */
 
-.sponser-container{
+.sponser-container {
     margin-top: 150px;
 }
-.sponser{
+
+.sponser {
     margin: auto;
     width: 60%;
     text-align: center;
 }
-.sponser-title{
+
+.sponser-title {
     color: #131313;
     font-size: 45px;
 }
-.sponser p{
+
+.sponser p {
     color: #727272;
     font-size: 16px;
 }
+
 /* logo styles */
-.logo{
+.logo {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 150px;
 
 }
-.logo img{
+
+.logo img {
     width: 100%;
 }
+
 /* footer styles */
-.footer-container{
+.footer-container {
     background: #FFF4E7;
     margin-top: 130px;
 }
-.footer-container p{
+
+.footer-container p {
     text-align: center;
     color: #424242;
     font-size: 20px;
     padding: 20px;
+}
+
+
+/* Header & navbar Responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0px 10px;
+
+    }
+
+    .architect-container {
+        background: rgba(255, 144, 14, 0.1);
+
+    }
+
+    .nav-container {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .nav-title {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* Quick Responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .quick-container {
+        flex-direction: column-reverse;
+    }
+    .quick-article {
+        margin: 0px;
+    }
+
+    .quick-imag {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Features Responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
+
+
+/* Awarded Responsive for mobile device */
+@media screen and (max-width:576px) {
+    .awarded {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
