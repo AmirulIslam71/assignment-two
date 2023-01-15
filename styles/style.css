@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Work+Sans:wght@700&display=swap');
 
 * {
-    margin-top: 0;
+    margin: 0;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    align-items: center;
 }
 
 .nav-title {
@@ -245,10 +246,48 @@ article p {
     width: 100%;
 }
 
+/* portfolio recent projects styles */
+.portfolio-recent {
+    background-color: rgb(37, 33, 33);
+    margin-top: 50px;
+}
+
+.portfolio-title {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portfolio-title h4 {
+    color: rgb(204, 140, 21);
+    padding: 20px;
+}
+
+.portfolio-title h2 {
+    color: whitesmoke;
+}
+
+hr {
+    width: 50%;
+}
+
+.portfolio-image {
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+}
+
 /* footer styles */
 .footer-container {
     background: #FFF4E7;
-    margin-top: 130px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .footer-container p {
@@ -259,38 +298,32 @@ article p {
 }
 
 
-/* Header & navbar Responsive for mobile device */
+/* Responsive for mobile device */
+
+
+
 @media screen and (max-width: 576px) {
+
+    /* header and nav bar styles */
     .container {
-        padding: 0px 10px;
-
-    }
-
-    .architect-container {
-        background: rgba(255, 144, 14, 0.1);
-
+        padding: 0;
     }
 
     .nav-container {
         flex-direction: column;
-        width: 100%;
-
-    }
-
-    .nav-title {
-        width: 100%;
     }
 
     nav {
         flex-direction: column;
     }
-}
 
-/* Quick Responsive for mobile device */
-@media screen and (max-width: 576px) {
+    /* Quick Responsive for mobile device */
+
     .quick-container {
         flex-direction: column-reverse;
+        text-align: center;
     }
+
     .quick-article {
         margin: 0px;
     }
@@ -300,23 +333,104 @@ article p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    
+    /* Features Responsive for mobile device */
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        text-align: center;
+    }
+
+    /* Awarded Responsive for mobile device */
+
+    .awarded {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* logo mobile style */
+
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* portfolio recent responsive for mobile device */
+    .portfolio-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
 }
 
-/* Features Responsive for mobile device */
+/* Responsive for ipad tablet device */
 
-@media screen and (max-width: 576px) {
+
+
+@media screen and (min-width: 577px) and (max-width:922px) {
+
+    /* Header & navbar Responsive for ipad tablet device */
+    .container {
+        padding: 0;
+    }
+
+    .architect-container {
+        background: rgba(255, 144, 14, 0.1);
+    }
+
+    .nav-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-title {
+        width: 100%;
+    }
+
+    /* Quick Responsive for ipad tablet device */
+
+    .quick-container {
+        flex-direction: column-reverse;
+    }
+
+    .quick-article {
+        margin: 0px;
+    }
+
+    .quick-imag {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features Responsive for tablet device */
+
     .features-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
     }
-}
 
-
-/* Awarded Responsive for mobile device */
-@media screen and (max-width:576px) {
+    /* Awarded Responsive for tablet device */
     .awarded {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    /* logo styles */
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    /* portfolio recent responsive for tablet device */
+
+    .portfolio-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
 }
